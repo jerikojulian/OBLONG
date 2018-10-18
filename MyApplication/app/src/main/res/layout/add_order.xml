@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+
+                android:id="@+id/Nama"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="Nama Pemesan"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/NamaPemesan"
+                android:layout_alignStart="@+id/NamaPemesan"
+                android:layout_marginTop="46dp" />
+
+            <EditText
+                android:id="@+id/NamaPemesan"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:background="@drawable/round"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="16dp"
+                android:layout_below="@+id/Nama"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/Spinnerjenis"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/NamaPemesan"
+                android:layout_alignStart="@+id/NamaPemesan"
+                android:layout_below="@+id/NamaPemesan"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="Jenis Pesanan"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+
+            <!--<Spinner-->
+                <!--android:id="@+id/spinnerJenisOrder"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginRight="20dp"/>-->
+
+
+            <Spinner
+                android:id="@+id/spinnerJenisOrder"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/Spinnerjenis"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round"
+                android:ems="10"
+                android:paddingLeft="20dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/jum"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/NamaPemesan"
+                android:layout_alignStart="@+id/NamaPemesan"
+                android:layout_below="@+id/spinnerJenisOrder"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="Jumlah Pesanan"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/JumlahOrder"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/jum"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:paddingLeft="20dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/Har"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/NamaPemesan"
+                android:layout_alignStart="@+id/NamaPemesan"
+                android:layout_below="@+id/JumlahOrder"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="Harga Per Item"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Harga"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:background="@drawable/round"
+                android:inputType="number"
+                android:paddingLeft="16dp"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:layout_below="@+id/Har"
+                android:layout_alignLeft="@+id/NamaPemesan"
+                android:layout_alignStart="@+id/NamaPemesan"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/Ket"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/NamaPemesan"
+                android:layout_alignStart="@+id/NamaPemesan"
+                android:layout_below="@+id/Harga"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="Keterangan"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/KeteranganOrder"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:background="@drawable/round"
+                android:inputType="number"
+                android:paddingLeft="16dp"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:layout_below="@+id/Ket"
+                android:layout_alignLeft="@+id/NamaPemesan"
+                android:layout_alignStart="@+id/NamaPemesan"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/NamaPemesan"
+                android:layout_alignStart="@+id/NamaPemesan"
+                android:layout_below="@+id/KeteranganOrder"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:text="Tanggal Deadline"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonDate"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:background="@drawable/round"
+                android:inputType="number"
+                android:paddingLeft="16dp"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:layout_below="@+id/Date"
+                android:layout_alignLeft="@+id/NamaPemesan"
+                android:layout_alignStart="@+id/NamaPemesan"
+                android:layout_marginBottom="5dp" />
+
+
+            <Button
+                android:id="@+id/buttonAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/buttonDate"
+                android:layout_centerInParent="true"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundb"
+                android:onClick="Save"
+                android:text="S A V E"
+                android:textColor="@color/example" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

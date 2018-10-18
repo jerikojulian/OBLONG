@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "469886039907",
+    "firebase_url": "https://myapplication-20356.firebaseio.com",
+    "project_id": "myapplication-20356",
+    "storage_bucket": "myapplication-20356.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469886039907:android:8f5792edaafd00a6",
+        "android_client_info": {
+          "package_name": "com.example.jupetaek.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469886039907-a02pmggpp68br6se02kql5f7uo7ph1n3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jupetaek.myapplication",
+            "certificate_hash": "9956177e113a78ada0fd91aecf5712e4bf7aeaee"
+          }
+        },
+        {
+          "client_id": "469886039907-3i5ene7tlit0c70602k1pmir1886a2k7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA91TvYfeZt3yRew0xf6pbIZjIJLAzTn5w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469886039907-3i5ene7tlit0c70602k1pmir1886a2k7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

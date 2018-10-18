@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.oblong.myapplication.MainActivity">
+    <!--<item-->
+    <!--android:id="@+id/action_settings"-->
+    <!--android:orderInCategory="100"-->
+    <!--android:title="aaaa"-->
+    <!--app:showAsAction="never" />-->
+
+    <item
+        android:title="SignOut"
+        android:id="@+id/signout"
+        app:showAsAction="never"
+        />
+
+
+    <!--<item
+        android:title="Nearby Location"
+        android:id="@+id/nearby"
+        app:showAsAction="never"
+        />-->
+</menu>

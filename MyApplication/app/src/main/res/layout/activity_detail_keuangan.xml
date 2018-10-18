@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oblong.myapplication.DetailKeuanganActivity"
+    android:background="@color/backgroundColor">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp">
+
+            <Button
+                android:id="@+id/deleteOrder"
+                android:layout_width="30dp"
+                android:layout_marginLeft="60dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_delete_white_24dp"
+                android:onClick="deleteOrder"
+                android:textColor="@color/example" />
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="5000dp"
+        android:fillViewport="true"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/blue">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TextView
+
+                android:id="@+id/JudulOrder"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:paddingLeft="13dp"
+                android:text="INFORMASI ORDER"
+                android:textColor="#176d7a"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:layout_alignLeft="@+id/deskripsiOrder"
+                android:layout_alignStart="@+id/deskripsiOrder" />
+            <View
+                android:id="@+id/separator2"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/JudulOrder"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round"/>
+
+            <TextView
+
+                android:id="@+id/Nama1"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:layout_alignLeft="@+id/namaPemesan"
+                android:gravity="center_vertical"
+                android:layout_alignStart="@+id/namaPemesan"
+                android:background="@null"
+                android:paddingLeft="13dp"
+                android:text="NAMA PEMESAN"
+                android:textStyle="bold"
+                android:layout_below="@+id/separator2"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/namaPemesan"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:ems="10"
+                android:paddingLeft="13dp"
+                android:text="Jeriko Hosea"
+                android:textSize="12dp"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/Nama1"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+
+                android:id="@+id/Jenis1"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:inputType="textPersonName"
+                android:paddingLeft="13dp"
+                android:gravity="center_vertical"
+                android:text="JENIS PESANAN"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:layout_below="@+id/namaPemesan"
+                android:layout_alignLeft="@+id/namaPemesan"
+                android:layout_alignStart="@+id/namaPemesan" />
+
+            <TextView
+                android:id="@+id/jenisOrder"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:paddingLeft="13dp"
+                android:text="Kaos"
+                android:textSize="12dp"
+                android:ems="10"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/Jenis1"
+                android:layout_alignLeft="@+id/Jenis1"
+                android:layout_alignStart="@+id/Jenis1" />
+
+            <TextView
+
+                android:id="@+id/Jumlah1"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:inputType="textPersonName"
+                android:paddingLeft="13dp"
+                android:gravity="center_vertical"
+                android:text="JUMLAH PESANAN (PCS)"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:layout_below="@+id/jenisOrder"
+                android:layout_alignLeft="@+id/jenisOrder"
+                android:layout_alignStart="@+id/jenisOrder" />
+
+            <TextView
+                android:id="@+id/jumlahOrder"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:paddingLeft="13dp"
+                android:text="56"
+                android:textSize="12dp"
+                android:ems="10"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/Jumlah1"
+                android:layout_alignLeft="@+id/Jumlah1"
+                android:layout_alignStart="@+id/Jumlah1" />
+
+            <TextView
+
+                android:id="@+id/Harga1"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:paddingLeft="13dp"
+                android:text="HARGA ITEM"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:layout_below="@+id/jumlahOrder"
+                android:layout_alignLeft="@+id/jumlahOrder"
+                android:layout_alignStart="@+id/jumlahOrder" />
+
+            <TextView
+                android:id="@+id/harga"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:paddingLeft="13dp"
+                android:text="56000"
+                android:textSize="12dp"
+                android:ems="10"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/Harga1"
+                android:layout_alignLeft="@+id/Harga1"
+                android:layout_alignStart="@+id/Harga1" />
+
+            <TextView
+
+                android:id="@+id/Ala"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:inputType="textPersonName"
+                android:paddingLeft="13dp"
+                android:gravity="center_vertical"
+                android:text="DEADLINE PESANAN"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:layout_below="@+id/harga"
+                android:layout_alignLeft="@+id/harga"
+                android:layout_alignStart="@+id/harga" />
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:paddingLeft="13dp"
+                android:text="15-06-2018"
+                android:textSize="12dp"
+                android:ems="10"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/Ala"
+                android:layout_alignLeft="@+id/Ala"
+                android:layout_alignStart="@+id/Ala" />
+
+            <TextView
+                android:id="@+id/Ket"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:text="KETERANGAN"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/alamat"
+                android:layout_alignLeft="@+id/alamat"
+                android:layout_alignStart="@+id/alamat" />
+
+            <TextView
+                android:id="@+id/deskripsiOrder"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:ems="10"
+                android:paddingLeft="13dp"
+                android:text="Menggunakan kaos 30s combed warna kuning"
+                android:textSize="12dp"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/Ket"
+                android:layout_alignLeft="@+id/Ket"
+                android:layout_alignStart="@+id/Ket" />
+
+            <Button
+                android:id="@+id/saveEditOrder"
+                android:layout_below="@+id/deskripsiOrder"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/roundb"
+                android:textColor="@color/example"
+                android:text="S A V E"
+                android:visibility="gone"
+                android:onClick="saveEditOrder"
+                />
+
+
+            <!-- =========================================================-->
+            <TextView
+
+                android:id="@+id/JudulBiaya"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:paddingLeft="13dp"
+                android:text="INFORMASI KEUNTUNGAN ORDER"
+                android:textColor="#176d7a"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:layout_below="@+id/saveEditOrder"
+                android:layout_alignLeft="@+id/deskripsiOrder"
+                android:layout_alignStart="@+id/deskripsiOrder" />
+            <View
+                android:id="@+id/separator1"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/JudulBiaya"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round"/>
+
+            <TextView
+
+                android:id="@+id/total"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:paddingLeft="13dp"
+                android:text="Harga Total"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/separator1"
+                android:layout_alignLeft="@+id/deskripsiOrder"
+                android:layout_alignStart="@+id/deskripsiOrder" />
+
+
+            <TextView
+                android:id="@+id/hargaTotal"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:paddingLeft="13dp"
+                android:textColor="@android:color/white"
+                android:text="Menggunakan kaos 30s combed warna kuning"
+                android:textSize="12dp"
+                android:layout_below="@+id/total"
+                android:layout_alignLeft="@+id/Bahan"
+                android:layout_alignStart="@+id/Bahan" />
+
+
+            <TextView
+
+                android:id="@+id/Bahan"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:paddingLeft="13dp"
+                android:text="Biaya Total Bahan"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/hargaTotal"
+                android:layout_alignLeft="@+id/deskripsiOrder"
+                android:layout_alignStart="@+id/deskripsiOrder" />
+
+
+            <TextView
+                android:id="@+id/belanjaBahan"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:paddingLeft="13dp"
+                android:textColor="@android:color/white"
+                android:text="Menggunakan kaos 30s combed warna kuning"
+                android:textSize="12dp"
+                android:layout_below="@+id/Bahan"
+                android:layout_alignLeft="@+id/Bahan"
+                android:layout_alignStart="@+id/Bahan" />
+
+            <TextView
+
+                android:id="@+id/Pot"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:paddingLeft="13dp"
+                android:text="Biaya Potong"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/belanjaBahan"
+                android:layout_alignLeft="@+id/belanjaBahan"
+                android:layout_alignStart="@+id/belanjaBahan" />
+
+            <TextView
+                android:id="@+id/potong"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:paddingLeft="13dp"
+                android:text="Menggunakan kaos 30s combed warna kuning"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/Pot"
+                android:layout_alignLeft="@+id/Pot"
+                android:layout_alignStart="@+id/Pot" />
+
+            <TextView
+
+                android:id="@+id/sabbor"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:paddingLeft="13dp"
+                android:text="Biaya Bordir / Sablon "
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/potong"
+                android:layout_alignLeft="@+id/potong"
+                android:layout_alignStart="@+id/potong" />
+
+            <TextView
+                android:id="@+id/sablonBordir"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:paddingLeft="13dp"
+                android:text="Menggunakan kaos 30s combed warna kuning"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/sabbor"
+                android:layout_alignLeft="@+id/Bahan"
+                android:layout_alignStart="@+id/Bahan" />
+
+            <TextView
+
+                android:id="@+id/Jahit"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:paddingLeft="13dp"
+                android:text="Biaya Jahit"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/sablonBordir"
+                android:layout_alignLeft="@+id/sablonBordir"
+                android:layout_alignStart="@+id/sablonBordir" />
+
+            <TextView
+                android:id="@+id/jahit"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:paddingLeft="13dp"
+                android:text="Menggunakan kaos 30s combed warna kuning"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/Jahit"
+                android:layout_alignLeft="@+id/Jahit"
+                android:layout_alignStart="@+id/Jahit" />
+
+            <TextView
+
+                android:id="@+id/Lain"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:inputType="textPersonName"
+                android:paddingLeft="13dp"
+                android:text="Pengeluaran Lain"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/jahit"
+                android:layout_alignLeft="@+id/jahit"
+                android:layout_alignStart="@+id/jahit" />
+
+            <TextView
+                android:id="@+id/pengeluaranLain"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:paddingLeft="13dp"
+                android:text="Menggunakan kaos 30s combed warna kuning"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/Lain"
+                android:layout_alignLeft="@+id/Jahit"
+                android:layout_alignStart="@+id/Jahit" />
+
+            <TextView
+
+                android:id="@+id/Untung"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:paddingLeft="13dp"
+                android:text="KEUNTUNGAN"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/pengeluaranLain"
+                android:layout_alignLeft="@+id/jahit"
+                android:layout_alignStart="@+id/jahit" />
+
+            <TextView
+                android:id="@+id/keuntungan"
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:paddingLeft="13dp"
+                android:text="Menggunakan kaos 30s combed warna kuning"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/Untung"
+                android:layout_alignLeft="@+id/Jahit"
+                android:layout_alignStart="@+id/Jahit" />
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

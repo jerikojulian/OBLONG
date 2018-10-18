@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#052B51</color>
+    <color name="colorPrimaryDark">#05253D</color>
+    <color name="colorAccent">#bbb8ba</color>
+    <color name="backgroundBlue">#DAEAF9</color>
+    <color name="backgroundColor">#cccccc</color>
+    <color name="button">#075197</color>
+    <color name="buttonDisabled">#00075197</color>
+    <color name="indigo">#ad02fc</color>
+    <color name="white">#ffffff</color>
+    <color name="pink">#fc02a9</color>
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+</resources>
